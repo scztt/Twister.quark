@@ -1,0 +1,19 @@
+(
+          name: "Twister",
+       summary: "MIDIFighter Twister control class",
+        author: "scott@artificia.org",
+     copyright: "Frank Scott Carver, 2017",
+       license: "MIT",
+       version: "0.1",
+        schelp: "Twister",
+          test: "",
+           url: "https://github.com/scztt/Twister.quark",
+  dependencies: [
+              		"Connection",
+              		"Singleton",
+              		"Collapse",
+              		"MIDIWatcher"
+                ],
+  isCompatible: true ,
+         since: "2013"
+)
