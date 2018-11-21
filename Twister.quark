@@ -12,7 +12,7 @@
               		"Connection",
               		"Singleton",
               		"Collapse",
-              		"MIDIWatcher"
+              		"https://github.com/scztt/MIDIWatcher.quark"
                 ],
   isCompatible: true ,
          since: "2013"
