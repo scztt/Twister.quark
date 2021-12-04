@@ -427,21 +427,15 @@ TwisterKnob {
 			Error("'target' must be a SynthArgSlot.").throw
 		};
 
-		target.postln;
-		target.synth.postln;
 		if (target.synth.isKindOf(Ndef)) {
-		target.synth.objects.postln;
 			def = target.synth.objects[0].synthDef
 		};
 		if (target.synth.isKindOf(Synth)) {
 			def = target.synth.def
 		};
 
-		def.postln;
 		spec = def !? {|d| d.specs[target.argName]} ?? target.argName.tryPerform(\asSpec) ?? ControlSpec(0, 1);
 		default = spec.default;
-
-		spec.postln;
 
 		if (knobCV.isNil) {
 			this.knobCV = BusControlValue(spec:spec);
